@@ -1,7 +1,7 @@
 
 
 // SEARCH INPUT from User from search bar
- let searchInput = "kindle e book reader";
+ let searchInput = "OTTOMAN BOOKS";
 
 // remove all white space AND  toLocaleLowerCase();
 let readyforUrl = searchInput.toLowerCase().replace(/\s/g,'+');
@@ -23,14 +23,35 @@ String.prototype.turkishtoEnglish = function () {
       .replace('ç','c');
 };
 // 
-let yandexturkish = readyforUrl.turkishtoEnglish();
+let oneSearch = readyforUrl.turkishtoEnglish();
+
+
+
+
 //  FOR YANDEX
-//  https://yandex.com.tr/search/?text= search query
+let yandexURL = "https://yandex.com.tr/search/?text="+ oneSearch;
+let yandex = document.querySelector("#yandex");
+yandex.href = yandexURL ;
 
 
-let yandexURL = "https://yandex.com.tr/search/?text="+ yandexturkish;
 
-console.log(yandexURL);
+// FOR GOOGLE 
+let googleURL = "https://www.google.com/search?q=" + oneSearch;
+let google = document.querySelector("#google");
+google.href = googleURL;
+
+
+
+
+
+// FOR ARCHIVE https://archive.org/search.php?query=osmanl%C4%B1%20tarihi
+
+let archiveURL = "https://archive.org/search.php?query=" + oneSearch;
+let archive = document.querySelector("#archive");
+archive.href = archiveURL;
+
+
+
 
 
 
