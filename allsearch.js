@@ -1,44 +1,56 @@
 
 
- document.querySelector(".btn").addEventListener('click' , function() {
+// SEARCH INPUT from User from search bar
+ let searchInput = "kindle e book reader";
 
-     let userInput = document.querySelector(".userText").value;
-       // alert(userInput);
-    
+// remove all white space AND  toLocaleLowerCase();
+let readyforUrl = searchInput.toLowerCase().replace(/\s/g,'+');
 
- });
-
-
-
-// let googleUrl = "'<a href="'https://yandex.com.tr/search/?text=kol+saati" target="_blank">Y</a>"';
-
-//         // console.log(googleUrl);
-//         console.log(googleUrl);
-
-// let googleHtml = document.querySelector(".google");
-
-
-
-
-
-
-
-
-
-
-
-
+// replace function for turkish letters problem
+String.prototype.turkishtoEnglish = function () {
+  return this.replace('ğ','g')
+      .replace('ü','u')
+      .replace('ş','s')
+      .replace('ı','i')
+      .replace('i','i')
+      .replace('ö','o')
+      .replace('ç','c')
+      .replace('ğ','g')
+      .replace('ü','u')
+      .replace('ş','s')
+      .replace('ı','i')
+      .replace('ö','o')
+      .replace('ç','c');
+};
+// 
+let yandexturkish = readyforUrl.turkishtoEnglish();
+//  FOR YANDEX
+//  https://yandex.com.tr/search/?text= search query
 
 
+let yandexURL = "https://yandex.com.tr/search/?text="+ yandexturkish;
+
+console.log(yandexURL);
 
 
 
 
-// document.querySelector(".btn").addEventListener('click' , function(el) {
 
-//     alert("works");
-//     return el;
 
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
