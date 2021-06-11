@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>ALL SEARCH ENGINES IN ONE PLACE</title>
-    <!-- <link rel="stylesheet" href="assets/allsearch.css">  -->
+  <link rel="stylesheet" href="assets/allsearch.css">  
 </head>
 <body>
     <!-- NAVBAR -->
@@ -27,31 +27,36 @@
         <!-- search section -->
         <div class="container-fluid p-4"> 
             <form class="d-flex">
-              <input class="form-control me-2 form-control-lg" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input id="search-input" class="form-control me-2 form-control-lg" type="search" placeholder="Search" aria-label="Search">
+              <button id="search-js" class="btn btn-outline-success" type="submit">Search</button>
             </form>
-        </div>
+            <div class="text-center p-3" id="show-banner"></div>
+
         <!-- search section -->
 
 
     <div class="container p-3" id="search-block">
         <div class="search-sites p-2">
-            <h3 class="h3 p-2">Arama Motorları</h3>
 
-                    <a href="" target="_self" class="google" id="google"><button class="btn btn-danger">Google'da Ara</button></a>
+            <h3 class="h3 p-2">Search Engines: </h3>
+
+                    <a href="" target="_blank" class="google" id="google"><button class="btn btn-danger">Google'da Ara</button></a>
 
                     <a href="" target="_blank" class="yandex" id="yandex"><button class="btn btn-success">Yandex'de Ara</button></a>
         </div>
     </div>
 
     <!-- another section  -->
+
+   
     <!-- another section  -->
     <!-- another section  -->
 
 
     <div class="container p-3" id="shop-block">
         <div class="shop-sites p-2">
-            <h3 class="h3 p-2">Alışveriş Siteleri</h3>
+
+            <h3 class="h3 p-2">Shopping: </h3>
 
                 <a href="" target="_parent" class="amazon" id="amazon"><button class="btn btn-warning">Amazon'da Ara</button></a>
                 <a href="" target="_parent" class="amazon" id="amazon"><button class="btn btn-info">Sahibinden'de Ara</button></a>
@@ -61,6 +66,21 @@
     </div>
 
     <!-- another section  -->
+
+    <!-- another section  -->
+    <!-- another section  -->
+    <div class="container p-3" id="cargo-block">
+        <div class="cargo-sites p-2">
+            <h3 class="h3 p-2">Kargo Takip</h3>
+
+                <a href="" target="_parent" class="amazon" id="amazon"><button class="btn btn-warning">Yurtiçi Kargo'da Sorgula</button></a>
+                <a href="" target="_parent" class="amazon" id="amazon"><button class="btn btn-info">MNG'de Sorgula</button></a>
+
+        </div>
+
+    </div>
+
+     <!-- another section  -->
     <!-- another section  -->
     <!-- another section  -->
 
