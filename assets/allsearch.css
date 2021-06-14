@@ -1,1 +1,35 @@
+
+
+.texto2  {
+  display: block;
+
+    border-right: .15em solid rgb(31, 23, 10);
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation : typing 3.5s steps(60, end);
+
+  }
  
+  /* deneme */
+ 
+  
+   .texto {
+    display: block;
+    font-family: "Courier";
+
+    color:red;
+    white-space: nowrap;  
+    letter-spacing: .05rem;
+    animation : typing 3.5s steps(60, end);
+    overflow: hidden;
+  }
+  @keyframes typing{
+    from {
+      width: 1%;
+    }
+    to{
+      width: 100%;
+    }
+  }
+  
