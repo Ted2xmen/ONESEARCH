@@ -99,8 +99,8 @@ github.href = githubURL;
 // yandex.href = yandexURL ;
 
 // FOR GOOGLE 
-let googleURL = "https://www.google.com/search?q=" + oneSearch;
-let google = document.querySelector("#google");
+var googleURL = "https://www.google.com/search?q=" + oneSearch;
+var google = document.querySelector("#google");
 google.href = googleURL;
 
 // // for YAHOO
@@ -141,8 +141,8 @@ let redditURL = "https://www.reddit.com/search/?q=" + oneSearch;
 let reddit = document.querySelector("#reddit");
 reddit.href = redditURL
 // stackoverflow https://stackoverflow.com/search?q=find+worksheet+name+in
-let stackURL = "https://stackoverflow.com/search?q=" + oneSearch;
-let stack = document.querySelector("#stackoverflow");
+var stackURL = "https://stackoverflow.com/search?q=" + oneSearch;
+var stack = document.querySelector("#stackoverflow");
 stack.href = stackURL;
 // quora 
 let quoraURL = "https://www.quora.com/search?q=" + oneSearch;
@@ -169,7 +169,11 @@ devto.href = devtoURL;
 
 });
 
-// for bookmark
+
+
+
+
+// for bookmark ////////////////////
 function rudr_favorite(a) {
 	pageTitle=document.title;
 	pageURL=document.location;
@@ -204,6 +208,26 @@ function rudr_favorite(a) {
 
 
 
+let handleOne = document.querySelector("#handleOne").addEventListener('click' , function(){
+
+
+
+let google2 = document.querySelector(".google");
+let googleall = google2.href
+
+
+
+let stack2 = document.querySelector("#stackoverflow");
+let stackall = stack2.href
+
+
+
+setTimeout(function(){ window.open(stackall); }, 2000);
+setTimeout(function(){ window.open(googleall); }, 3000);
+
+
+
+});
 
 
 
