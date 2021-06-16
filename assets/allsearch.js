@@ -61,7 +61,7 @@ let handleSearch = document.querySelector("#search-js").addEventListener('click'
 
 // search banner text
 var showBanner = document.querySelector("#show-banner");
-showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span>  all links are ready   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span>    <i class="bi bi-check-square"></i></span>
 `;
 
 
