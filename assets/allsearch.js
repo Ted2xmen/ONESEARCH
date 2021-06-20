@@ -69,9 +69,18 @@ showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span>    <i class=
 
 
 
-let webURL = "https://" + oneSearch;
-let web = document.querySelector("#web");
-web.href = webURL
+// let webURL = "https://" + oneSearch;
+// let web = document.querySelector("#web");
+// web.href = webURL
+
+
+// youtube 
+
+let youtubeURL = "https://www.youtube.com/results?search_query=" + oneSearch;
+let youtube = document.querySelector("#youtube");
+youtube.href = youtubeURL;
+
+
 // twitter 
 
 let twitterURL = "https://twitter.com/search?q=" + oneSearch;
