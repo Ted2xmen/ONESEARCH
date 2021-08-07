@@ -61,7 +61,7 @@ let handleSearch = document.querySelector("#search-js").addEventListener('click'
 
 // search banner text
 var showBanner = document.querySelector("#show-banner");
-showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span>    <i class="bi bi-check-square"></i></span>
+showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span> all links are clickable    <i class="bi bi-check-square"></i></span>
 `;
 
 
@@ -127,8 +127,6 @@ google.href = googleURL;
 // let archiveURL = "https://archive.org/search.php?query=" + oneSearch;
 // let archive = document.querySelector("#archive");
 // archive.href = archiveURL;
-
-
 
 
 // links for ShoppingTR
