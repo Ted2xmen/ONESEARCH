@@ -11,14 +11,14 @@ let handleSearch = document.querySelector("#search-js").addEventListener('click'
 	showBanner.innerHTML = ` <span class="deneme">"${oneSearch}"</span> all links are clickable    <i class="bi bi-check-square"></i></span>
 `;
 
-	function makeFunction(queryy, selectorr ) {
-		let nameURL =  queryy  + oneSearch;
-		let isim = document.querySelector( `${selectorr}` );
-		isim.href = nameURL;
-	};
-
 
 // search engines
+
+function makeFunction(queryy, selectorr ) {
+	let nameURL =  queryy  + oneSearch;
+	let isim = document.querySelector( `${selectorr}` );
+	isim.href = nameURL;
+};
 
 let youtube = "#youtube";
 makeFunction( "https://www.youtube.com/results?search_query=", youtube );
@@ -56,7 +56,7 @@ makeFunction( "https://dev.to/search?q=", devto );
 });
 
 
-// for bookmark 
+// for bookmark (from stackoverflow)
 function rudr_favorite(a) {
 	pageTitle=document.title;
 	pageURL=document.location;

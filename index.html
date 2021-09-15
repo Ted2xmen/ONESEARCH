@@ -18,13 +18,13 @@
     <meta name="twitter:description" content="One search rules all">
     <meta name="twitter:image" content="assets/banner.png">
   <link rel="stylesheet" href="allsearch.css">  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJT1LBL8L9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-YJT1LBL8L9');
 </script>
 
@@ -32,146 +32,120 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Search 🔍 </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://github.com/Ted2xmen/ONESEARCH" target="_blank">Github Repo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)" onClick="return rudr_favorite(this);">Bookmark This</a>
-              </li>
-              
-            </ul>
-            <span class="navbar-text">
-              One search rules all
-            </span>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Search 🔍 </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/Ted2xmen/ONESEARCH"
+                target="_blank">Github Repo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" onClick="return rudr_favorite(this);">Bookmark This</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            One search rules all
+          </span>
         </div>
-      </nav>
-
+      </div>
+    </nav>
 
 <div class="container text-center">
 
-
-  <div class="container p-5"><img src="assets/undraw.svg" width="300" height="150"></div>
-
-<div class="col-8 mx-auto">
-
-    <!-- search -->
-    <form class="d-flex p-2">
-      <input id="search-input" class="form-control me-2 form-control-lg" type="search" placeholder="one search rules all..." aria-label="Search">
-      <button id="search-js" class="btn btn-outline-success" type="submit"> 🔍 </button>
-    </form>
-    <!-- search -->
-
-</div>
-  
-      <div class="pt-3  col-8 mx-auto">
-
-        <div class="alert alert-info text-center" id="show-banner" role="alert">
-          what are you lookin for?
-        </div>
+  <div class="container p-5"><img src="assets/undraw.svg" width="300" class="box1" height="150"></div>
+  <!-- search -->
+    <div class="col-8 mx-auto">
+      <form class="d-flex p-2">
+        <input id="search-input" class="form-control me-2 form-control-lg" type="search"
+          placeholder="one search rules all..." aria-label="Search">
+        <button id="search-js" class="btn btn-outline-success" type="submit"> 🔍 </button>
+      </form>
+      <div class="alert alert-warning text-center" id="show-banner" role="alert">
+        what are you lookin for?
       </div>
-
+    </div>
+  <!-- search -->
 </div>
 
-<div class="container d-grid gap-3">
-  <div class="d-flex flex-row bd-highlight mb-2">
-    <div class="col mx-1">
-      <a href="" target="_blank" class="google" id="google">
-        <button class="btn btn-outline-success">
-          <img src="assets/google.svg" width="100" height="70"> 
-        </button>
-    </a>
 
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="stackoverflow" id="stackoverflow">
-        <button class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Needs human verification"> 
-          <img src="assets/stackoverflow.svg" width="100" height="70"> 
-        </button>
-    </a>
+<div class="container d-flex justify-content-center align-items-center align-self-center">
+  <div class="row row-cols-2 row-cols-sm-2 gap-0 row-cols-md-6 py-1 my-1">
 
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="github" id="github">
-        <button class="btn btn-outline-danger">
-            <img src="assets/github.svg" width="100" height="70"> 
-        </button>
-      </a>
+    <div class="col">  <a href="" target="_blank" class="google" id="google">
+      <button class="btn btn-outline-success">
+        <img src="assets/google.svg" width="100" height="70"> 
+      </button>
+  </a></div>
 
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="youtube" id="youtube">
-        <button class="btn btn-outline-danger">
-          <img src="assets/youtube.svg" width="100" height="70"> 
-        </button>
-      </a>
+    <div class="col">  <a href="" target="_blank" class="stackoverflow" id="stackoverflow">
+      <button class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Needs human verification"> 
+        <img src="assets/stackoverflow.svg" width="100" height="70"> 
+      </button>
+  </a></div>
 
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="reddit" id="reddit">
-        <button class="btn btn-outline-secondary">
-        <img src="assets/reddit.svg" width="100" height="70">
-        </button>
-      </a>
+    <div class="col">   <a href="" target="_blank" class="github" id="github">
+      <button class="btn btn-outline-danger">
+          <img src="assets/github.svg" width="100" height="70"> 
+      </button>
+    </a></div>
 
-    </div>
+    <div class="col"><a href="" target="_blank" class="youtube" id="youtube">
+      <button class="btn btn-outline-danger">
+        <img src="assets/youtube.svg" width="100" height="70"> 
+      </button>
+    </a></div>
 
-    <div class="col mx-1">
-      <a href="" target="_blank" class="twitter" id="twitter">
-        <button class="btn btn-outline-danger">
-          <img src="assets/twitter.svg" alt="">
-        </button>
-      </a>
+    <div class="col"> <a href="" target="_blank" class="reddit" id="reddit">
+      <button class="btn btn-outline-secondary">
+      <img src="assets/reddit.svg" width="100" height="70">
+      </button>
+    </a></div>
 
-    </div>
+    <div class="col"> <a href="" target="_blank" class="twitter" id="twitter">
+      <button class="btn btn-outline-danger">
+        <img src="assets/twitter.svg" alt="">
+      </button>
+    </a></div>
 
-
-
-    <div class="col mx-1">
-      <a href="" target="_blank" class="medium" id="medium">
-        <button class="btn btn-outline-warning">
-          <img src="assets/medium.svg" alt="">
-        </button>
-      </a>
-
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="quora" id="quora"><button class="btn btn-outline-secondary">
-        <img src="assets/quora.svg">
-       </button></a>
-
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="hashnode" id="hashnode"><button class="btn btn-outline-warning">
-        <img src="assets/hashnode.svg" width="100" height="70">
-      </button></a>
-
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="devto" id="devto"><button class="btn btn-outline-warning"> 
-        <img src="assets/devto.svg" width="80" height="70">
-      </button></a>
-
-
-    </div>
-    <div class="col mx-1">
-      <a href="" target="_blank" class="linkedin" id="linkedin">
-        <button class="btn btn-outline-danger"><img src="assets/linkedin.svg" alt=""></button></a>
-
-      
-    </div>
+    
   </div>
- 
 </div>
 
+<div class="container">
+  <hr>
+</div>
 
+<div class="container d-flex justify-content-around">
+  <div class="row row-cols-2 row-cols-sm-2 gap-2 row-cols-md-6 py-1 my-1 ">
+
+    <div class="col"> <a href="" target="_blank" class="medium" id="medium">
+      <button class="btn btn-outline-warning">
+        <img src="assets/medium.svg" alt="">
+      </button>
+    </a></div>
+
+    <div class="col"><a href="" target="_blank" class="quora" id="quora"><button class="btn btn-outline-secondary">
+      <img src="assets/quora.svg">
+     </button></a></div>
+
+    <div class="col"> <a href="" target="_blank" class="hashnode" id="hashnode"><button class="btn btn-outline-warning">
+      <img src="assets/hashnode.svg" width="100" height="70">
+    </button></a></div>
+
+    <div class="col"><a href="" target="_blank" class="linkedin" id="linkedin">
+      <button class="btn btn-outline-danger"><img src="assets/linkedin.svg" alt=""></button></a></div>
+
+    <div class="col">  <a href="" target="_blank" class="devto" id="devto"><button class="btn btn-outline-warning"> 
+      <img src="assets/devto.svg" width="80" height="70">
+    </button></a></div>
+
+  </div>
+</div>
 
     <footer></footer>
 
